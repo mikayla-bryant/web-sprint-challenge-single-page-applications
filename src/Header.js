@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      <p>YUMMY TUMMY</p>
       <Link to='/'>Home</Link>
       <Link to='pizza'>Place an order</Link>
     </>
