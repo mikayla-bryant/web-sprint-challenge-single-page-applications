@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header h1 {
+  margin-left: 2%;
+  color: rgb(202, 57, 57);
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.nav-link {
+  padding: 13% 60% 13% 60%;
+  background-color: aqua;
+}
+.pizza-background-home {
+  height: 500px;
+  background-image: url('./Assets/Pizza.jpg');
+  display: flex;
+  align-items: center;
+}
+.pizza-background-home img {
+  height: 100%;
+}
+.pizza-background-home a {
+  font-size: 2rem;
+  margin: auto;
+}

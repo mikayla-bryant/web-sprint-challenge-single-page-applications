@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
-      <p>Come get your pizza</p>
+      <div className='pizza-background-home'>
+        <Link to='pizza'>Pizza?</Link>
+      </div>
     </div>
   );
 };

@@ -4,10 +4,17 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-      <h1>Lambda Eats</h1>
-      <p>YUMMY TUMMY</p>
-      <Link to='/'>Home</Link>
-      <Link to='pizza'>Place an order</Link>
+      <header>
+        <h1>Lambda Eats</h1>
+        <nav>
+          <Link className='nav-link' to='/'>
+            Home
+          </Link>
+          <a className='nav-link' href=''>
+            Help?
+          </a>
+        </nav>
+      </header>
     </>
   );
 };
