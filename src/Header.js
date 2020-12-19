@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Lambda Eats</h1>
       <p>You can remove this code and create your own header</p>
       <Link to='/'>Home</Link>
-      <Link to='order'>Place an order</Link>
+      <Link to='pizza'>Place an order</Link>
     </>
   );
 };

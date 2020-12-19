@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Header />
       <Switch>
-        <Route path='/order'>
+        <Route path='/pizza'>
           <PizzaForm />
         </Route>
         <Route path='/'>
