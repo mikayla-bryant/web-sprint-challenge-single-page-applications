@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as yup from 'yup';
 import axios from 'axios';
+import OrderSummary from './OrderSummary';
 const schema = yup.object().shape({
   username: yup
     .string()
@@ -172,7 +173,7 @@ const PizzaForm = () => {
         </label>
         <button disabled={disabled}>Place order</button>
       </form>
-      <pre>{JSON.stringify(post, null, 2)}</pre>
+      <OrderSummary orders={post} />
     </div>
   );
 };
