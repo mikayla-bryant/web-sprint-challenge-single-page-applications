@@ -7,11 +7,11 @@ const Header = () => {
       <header>
         <h1>Lambda Eats</h1>
         <nav>
-          <Link className='nav-link' to='/'>
+          <Link className='nav-link home-link' to='/'>
             Home
           </Link>
-          <a className='nav-link' href=''>
-            Help?
+          <a className='nav-link help-link' href=''>
+            Help
           </a>
         </nav>
       </header>

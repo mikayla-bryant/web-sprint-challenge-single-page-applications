@@ -1,3 +1,125 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: inline;
+}
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,36 +134,131 @@ code {
     monospace;
 }
 
+#bootstrap-overrides header {
+  display: flex;
+}
+#bootstrap-overrides ol,
+ul {
+  list-style-type: circle;
+  padding: 2%;
+}
+#bootstrap-overrides textarea {
+  margin: auto;
+}
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 header h1 {
-  margin-left: 2%;
+  margin: 1%;
   color: rgb(202, 57, 57);
+  font-family: 'Architects Daughter', cursive;
+  font-size: 2.5rem;
+  width: 20%;
+  display: inline;
 }
 header nav {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  margin-right: 10%;
   align-items: center;
   justify-content: center;
+  width: 15%;
+  margin: 1%;
 }
 .nav-link {
-  padding: 13% 60% 13% 60%;
-  background-color: aqua;
+  padding: 10% 60% 10% 60%;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.2rem;
+  border-radius: 4%;
+  text-decoration: none;
+  border: 2px solid rgb(24, 11, 11);
 }
+
+.home-link {
+  background-color: rgb(24, 11, 11);
+  color: whitesmoke;
+}
+.home-link:hover {
+  color: whitesmoke;
+}
+.help-link {
+  background-color: whitesmoke;
+  color: rgb(24, 11, 11);
+}
+.help-link:hover {
+  color: rgb(24, 11, 11);
+}
+
 .pizza-background-home {
   height: 500px;
   background-image: url('./Assets/Pizza.jpg');
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+.pizza-background-home div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Architects Daughter', cursive;
 }
 .pizza-background-home img {
   height: 100%;
 }
+.pizza-background-home p {
+  margin: auto;
+  font-size: 3rem;
+}
 .pizza-background-home a {
   font-size: 2rem;
+  margin: 3% auto;
+  background-color: whitesmoke;
+  color: rgb(24, 11, 11);
+  text-decoration: none;
+  padding: 1% 6% 1% 6%;
+  border: 2px solid rgb(24, 11, 11);
+  border-radius: 4%;
+}
+.pizza-background-home a:hover {
+  font-size: 2.1rem;
+  color: rgb(24, 11, 11);
+  text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  font-family: 'Oxygen', sans-serif;
+}
+
+textarea {
+  width: 95%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
   margin: auto;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.1rem;
+  margin-bottom: 5%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-subtitle {
+  background-color: rgba(148, 153, 153, 0.979);
+  padding: 2%;
+}
+
+.subtitle-text {
+  margin: 0%;
+}
+
+.subtitle-main {
+  font-family: 'Pangolin', cursive;
+  font-size: 1.3rem;
 }

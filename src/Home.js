@@ -5,7 +5,10 @@ const Home = () => {
   return (
     <div>
       <div className='pizza-background-home'>
-        <Link to='pizza'>Pizza?</Link>
+        <div>
+          <p>Your favorite food, delivered while coding</p>
+          <Link to='pizza'>Pizza?</Link>
+        </div>
       </div>
     </div>
   );
